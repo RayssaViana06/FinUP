@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* Estilos gerais */
+body {
+    background-color: #e0e8f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Botões */
+
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .header-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2c62a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .header-buttons button:hover {
+    background-color: #285bb5;
+  }
+
+button:focus {
+    outline: none;
+}
+
+/* Área de ganho e despesa */
+#entry-form {
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Tabela de exibição de dados */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.table-row-remove {
+    color: #d9534f;
+    cursor: pointer;
+}
+
+/* Seção de Categorias */
+
+#categories {
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: #f0f6ff;
+}
+
+.category-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.category-expand {
+    color: #2c62a7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Tabela de limite de gastos */
+.limit-table {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.limit-table input,
+.limit-table select {
+    width: auto;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .category-list,
+    #entry-form {
+        width: 95%;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Estilo para a seção da categoria */
+.category {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Estilo do botão de expandir categoria */
+
+
+
+.category .toggle-view {
+    background-color: #2c62a7;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilo para a tabela de limite de gastos */
+.limit-table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.limit-table td {
+    padding: 5px;
+}
+
+.limit-table input,
+.limit-table select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para a tabela de visualização estática */
+.static-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background-color: #eae5ff; /* Fundo azul claro */
+}
+
+.static-table th, .static-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.static-table th {
+    background-color: #2c62a7;
+    color: white;
+    font-weight: bold;
+}
+
+.static-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.static-table td {
+    font-size: 14px;
+}
+
+/* Estilo para o botão de remoção */
+.remove-row {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-row:hover {
+    background-color: #c0392b;
+}
+
+
+.category .toggle-view {
+    background-color: #2c62a7;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.category .category-details {
+    margin-top: 10
+}

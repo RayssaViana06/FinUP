@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+* {
+	font-family: 'DM Sans', sans-serif;
+}
+
+/* Paleta de cores principal */
+:root {
+	--azul-escuro-principal: #0c2d57;
+	--azul-intermed-secundario: #2c62a7;
+	--laranja-principal: #fc6736;
+	--amarelo-secundario: #ffad60;
+	--azul-claro-suave: #eae5ff;
+}
+
+.material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 24
+}
+
+.vh-100{
+  background-color: var(--azul-escuro-principal);
+
+}
+
+.card{
+   background-color: #EAE5FF;
+   
+}
+ span{
+   color: var(--amarelo-secundario);
+ }
+
+.col-lg-2{
+   position: fixed;
+   left: 0%;
+ }
+
+.form-outline{
+   position: relative;
+}
+
+.form-outline span{
+   position: fixed;
+   left: 33.5%;
+   
+}
+
+.form-outline input{
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-radius: 0%;
+}
+
+.form-outline i{
+   cursor: pointer;
+   position: absolute;
+   right: 5%;
+   bottom: 20%;
+   color: #9b9898;
+ }
+
+#username::-webkit-input-placeholder{
+   color:var(--amarelo-secundario);
+   font-style: bold;
+}
+ 
+ 
+#email::-webkit-input-placeholder{
+   color:var(--amarelo-secundario);
+   font-style: bold;
+}
+
+#password::-webkit-input-placeholder{
+   color:var(--amarelo-secundario);
+   font-style: bold;
+}
+
+#passwordConfirmation::-webkit-input-placeholder{
+   color:var(--amarelo-secundario);
+   font-style: bold;
+}
+
+#form small{
+   visibility: hidden;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .col-lg-2{
+       position: relative;
+       width: 55vw;
+       height: 35vw;
+    }
+
+    .form-outline span{
+      position: fixed;
+      left: 11.5%;
+      
+   }
+ }
