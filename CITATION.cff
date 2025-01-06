@@ -1,0 +1,28 @@
+cff-version: 1.0.1
+message: Finanças Pessoais
+title: FinUp
+authors:
+  - family-names: Salustino dos Santos
+    given-names: Agamenon
+  - family-names: Borges
+    given-names: Isabela
+  - family-names: Rezende Vieira 
+    given-names: João
+  - family-names: Clara Silva Miranda
+    given-names: Júlia
+  - family-names: Rossi Broch
+    given-names: Michelle
+  - family-names: Eduarda Guilherme Viana
+    given-names: Rayssa
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Christina De Paiva Carvalho
+    given-names: Joyce
+keywords:
+  - finanças
+  - gestão
+  - gastos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t2-pmv-ads-2024-2-e1-finup
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-06-26
