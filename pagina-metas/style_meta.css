@@ -1,0 +1,444 @@
+/* formulario e modal */
+
+#formMetas {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	border: transparent;
+
+}
+
+#formUpdateMetas {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	border: transparent;
+}
+
+#title {
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+#filters {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1%;
+
+}
+
+
+
+.form-label {
+	font-weight: lighter;
+}
+
+#formMetas button[type="submit"] {
+	width: 100%;
+	height: 40px;
+	background-color: #fc6736;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	grid-row: auto;
+	grid-column: 1/3;
+	justify-self: end;
+}
+
+#descricao-container {
+	position: relative;
+}
+
+#descricao-metas {
+	resize: none;
+	height: 100px;
+	padding: 10px;
+}
+
+#icon-descricao-metas {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#descricao {
+	display: none;
+}
+#descricao {
+	position: relative;
+	margin-top: 20px;
+}
+
+#dropdownMenuLink {
+	background-color: #eae5ff;
+	color: black;
+}
+
+#goals {
+	display: flex;
+	flex-direction: column;
+    gap: 1rem;
+}
+
+#task {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#metasContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#metasAdicionadas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+	padding: 20px;
+}
+	
+
+
+#metasAdicionadas .card {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+	background-color: #f8f9fa;
+	width: 200px;
+	flex: 1 1 auto;
+	min-width: 150px;
+	max-width: 250px;
+	overflow: hidden;
+}
+
+#metasAdicionadas .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#metasAdicionadas .card .card-body {
+	padding: 15px;
+}
+
+#metasAdicionadas p {
+    font-size: 0.9rem;
+    color: #545454;
+}
+
+#metasAdicionadas .col-md-4 {
+	margin-bottom: 20px;
+}
+
+#descricaoMetas {
+	border-radius: 10px; 
+  	padding: 10px;
+	width: 100%;
+}
+
+#descricaoMetas:focus {
+    outline: none;               
+    border-color: #2c62a7;       
+    box-shadow: 0px 0px 5px #0c4794
+}
+
+#templateTask {
+	display: flex;
+	overflow: hidden;
+	gap: 20px;
+	align-items: stretch;
+	border: none;
+	
+}
+
+#addtaskButton {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 200px;
+}
+
+.header-icon img {
+	width: 32px;
+	height: 32px;
+	margin-right: auto;
+}
+
+
+#sort-by {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	display: flex;
+	width: 13%;
+	background-color: #2c62a7;
+	border: #0069d9;
+	border-radius: 5px;
+	border: none;
+}
+
+#sort-by select {
+	text-align: left;
+	width: 100%;
+	font-size: 23px;
+	padding: 20px;
+	background-color: transparent;
+	border: none;
+}
+
+.card-body {
+	padding-left: 10px;
+}
+
+
+
+@keyframes progressAnim {
+	0% {width: 0;}
+	100% {width: var(--progress-width);}
+}
+
+#filtros li a:hover {
+	background-color: #fc6736;
+}
+
+.btn-task {
+	font-size: 1rem;
+	width: 100%;
+    max-width: 200px; 
+    background-color: #fc6736; 
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.btn-task:hover {
+	background-color: #5c49b1;
+}
+
+.progress-bar {
+	background-color: #795fe6;
+	animation: progressAnim 1.5s ease-in-out;
+	border-radius: 15px;
+	font-weight: bold;
+	text-align: center;
+	transition: width 0.4s ease;
+	color: #fff;
+}
+  
+.contribuicaoMensal {
+	font-size: 1rem; 
+  	margin-top: 10px; 
+  	line-height: 1.2;
+  	color: #333;
+ 	text-align: center;
+ 	white-space: normal;
+  	word-wrap: break-word;
+}
+
+#bodyCard #valorProgresso {
+	font-size: 0.8rem;
+   
+}
+
+.btnDetalhes {
+	background-color: #2c62a7;
+	color:white;
+	border:none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor:pointer;
+	transition: background-color 0.3s, ease;
+}
+
+.btnDetalhes:hover {
+	background-color: #0c2d57;
+}
+
+.btnEditar {
+	background-color: #eae5ff;
+	color:#0c2d57;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor:pointer;
+	transition: background-color 0.3s ease;
+}
+
+.btnEditar:hover {
+	background-color: #c4baff;
+}
+
+.btnConcluir {
+	background-color: #ffad60;
+	color:white;
+	border:none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.btnConcluir:hover {
+	background-color: #e89b54;
+}
+
+.btnExcluir {
+	background-color: #fc6736;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnExcluir:hover {
+	background-color: #d4552b;
+}
+
+.card {
+	min-height: 200px;
+}
+
+.card-footer {
+	display:flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+	gap: 5px;
+}
+
+.card-footer button {
+	flex:1;
+	padding: 5px;
+	font-size:0.85rem;
+}
+
+.card .col-md-2 img {
+	width: 100%;
+	max-height: 100px;
+	object-fit: cover;
+}
+
+#footerCard {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	border: none;
+	background-color: transparent
+}
+
+#bodyCard .card-text {
+	white-space: nowrap;
+  	text-overflow: ellipsis;
+}
+
+
+@media (max-width: 640px) {
+	#templateTask {
+		display: flex;
+		overflow: hidden;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: flex-start;
+		padding: 20px;
+		position: relative;
+		width: 400px;
+		height: 300px;
+	}
+}
+
+.mensagem-comemoracao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #795fe6;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOut 2.5s ease forwards, scaleUp 0.5s ease;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+@keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.textoLembrete {
+	color: #0c2d57;
+	max-width: 100%;
+	word-wrap: break-word; 
+	overflow-wrap: break-word; 
+	font-size:0.9rem;
+	line-height:1.2;
+}
+#btnAtualizar {
+	display: none;
+}
+
+#btnAtualizar {
+	width: 100%;
+	height: 40px;
+	background-color: #184888;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	grid-row: auto;
+	grid-column: 1/3;
+	justify-self: end;
+}
+
+#goals #task {
+	flex: 0 0 auto;
+	align-self: flex-start;
+	width: 200px;
+	height: 50px;
+	background-color: var(--laranja-principal);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+	#goals {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	#metasAdicionadas {
+		justify-content: center;
+	}
+
+	.btn-task {
+		width: 100%;
+		height: auto;
+	}
+}
